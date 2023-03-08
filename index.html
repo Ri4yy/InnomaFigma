@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
+	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<style type="text/tailwindcss">
+.container {
+    @apply max-[1920px]:max-w-[1216px]
+}
+</style>
+<body>
+
+    <!-- Начало: Данный блок удалять нельзя -->
+    <div class="maketforfigma">
+        <a href="https://t.me/s/FigmaToHTML" target="_blank">
+            <img src="assets/img/logo.png">
+        </a>
+        <div class="flex flex-col gap-2 mt-3">
+            <p>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+            </p>
+            <p>
+                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
+            </p>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <div class="main">
+        <!-- Шапка -->
+    <header class="bg-[url('assets/img/bg/bg1.png')] h-screen bg-no-repeat bg-cover relative">
+        <div class="hidden text-white absolute py-[100px] bg-[#07AF91] bg-cover bg-right-bottom h-screen top-0 flex flex-col items-center text-center -translate-x-1/2 left-1/2 w-full z-40" id="menu">
+            <a href="#" class="tracking-widest py-6 border-b-[1px] border-white w-40">Кто мы?</a>
+            <a href="#" class="tracking-widest py-6 border-b-[1px] border-white w-40">Услуги</a>
+            <a href="#" class="tracking-widest py-6 border-b-[1px] border-white w-40">Акселератор</a>
+            <a href="#" class="tracking-widest py-6 w-40">Новости</a>
+        </div>
+        <nav class="container px-5 min-[1216px]:px-0 mx-auto flex flex-col h-screen">
+            <div class="flex justify-between items-center lg:py-8 py-4">
+                <a href="#" class="lg:text-2xl md:text-xl text-base font-bold text-white uppercase">
+                    innova<span class="text-[#00B1E9]">.VC</span>
+                </a>
+                <div class="md:flex hidden items-center lg:gap-14 md:gap-8 text-white text-lg">
+                    <a href="#">Кто мы?</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Акселератор</a>
+                    <a href="#">Новости</a>
+                </div>
+                <div class="flex items-center gap-2 h-full">
+                    <button href="#" 
+                    class="bg-[#07AF91] lg:px-12 md:px-7 px-5 md:py-4 py-3 text-white lg:text-lg md:text-base text-sm lg:rounded-xl rounded-md hover:bg-[#2d8d7b] hover:text-[#bdbdbd] transition-all delay-50 duration-300 "
+                    data-te-toggle="modal"
+                    data-te-target="#exampleModal"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    >Войти
+                    </button>
+                    <div class="bg-white flex items-center justify-center h-full w-[52px] rounded-md md:hidden z-50" id="openMenu">
+                        <img src="assets/img/icon/menu.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="flex flex-col items-center lg:items-start mx-auto lg:mx-0 my-auto text-white w-fit">
+                <div class="flex flex-col text-center items-center lg:items-start uppercase font-bold lg:text-[43px] md:text-[36px] text-[24px] relative">
+                    <div class="absolute lg:top-16 md:top-[50px] top-[34px] lg:-left-2 md:-left-[1px] md:h-16 h-10 w-full bg-[#07AF91] rounded-md"></div>
+                    <div class="absolute lg:top-16 md:top-[50px] top-[70px] lg:-left-2 md:-left-[1px] md:h-16 h-10 w-[140px] bg-[#07AF91] rounded-md"></div>
+                    <p class="z-20">Запустите</p>
+                    <p class="z-20">технологический <span class="block md:inline">IT-бизнес</span></p>
+                    <p class="">на международных <span class="block md:inline">рынках</span></p>
+                </div>
+                <p class="lg:text-[34px] md:text-lg text-base mt-10 lg:mt-0">Открыт набор заявок на акселератор</p>
+                <a href="#" class="hover:bg-gradient-to-r hover:from-[#016CA8] hover:to-[#016CA8] mt-5 lg:px-8 md:px-12 px-14 md:py-7 py-4 font-semibold lg:text-xl md:text-lg text-base rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8] w-fit">Подать заявку</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modal -->
+    <div
+    data-te-modal-init
+    class="fixed top-40 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div data-te-modal-dialog-ref
+        class="relative w-auto translate-y-[-50px] opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto mt-10 min-[576px]:max-w-[500px]">
+        <div class="min-[576px]:shadow-[0_0.5rem_1rem_rgba(#000, 0.15)] pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white  ">
+        <div class="relative">
+            <button
+                type="button"
+                class="absolute -top-8 right-0"
+                data-te-modal-dismiss
+                aria-label="Close">
+                <img src="assets/img/icon/closeModal.png" alt="">
+            </button>
+            </div>
+            <div class="flex flex-col items-center relative p-7" data-te-modal-body-ref>
+                <p class="font-semibold mb-6">Вход</p>
+                <div class="flex flex-col gap-2 w-full mb-3">
+                    <input type="text" class="px-5 py-4 rounded bg-[#F1F1F1] text-[#707070] outline-0" placeholder="Е-маил">
+                    <input type="text" class="px-5 py-4 rounded bg-[#F1F1F1] text-[#707070] outline-0" placeholder="Пароль">
+                    <button class="flex justify-center py-4 rounded bg-[#07AF91] text-white">Войти</button>
+                </div>
+                <a href="#" class="text-[#07AF91] text-xs underline">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Услуги -->
+    <div class="container px-5 min-[1216px]:px-0 mx-auto my-[100px] flex flex-col">
+        <div class="flex flex-col mb-[100px]">
+            <p class="text-[#1178B2] font-bold md:text-4xl text-2xl lg:mb-32 mb-8 text-center lg:text-start">Наши услуги</p>
+            <div class="flex lg:flex-row flex-col justify-between items-center lg:items-start lg:mb-[190px] mb-14">
+                <div class="flex flex-col items-center lg:items-start gap-6 lg:w-7/12 w-full lg:order-1 order-2">
+                    <p class="text-[#1178B2] font-semibold lg:text-2xl md:text-lg text-base">Аналитические исследования</p>
+                    <p class="lg:text-xl md:text-lg text-sm font-light lg:text-start text-center">Одним из наших ключевых направлений является анализ технологических трендов на международных рынках.
+                        Мы проводим анализ на основе публичных исследований McKinsey, BCG, PWC, Deloitte, Accenture, BCG, EY, 
+                        Crunchbase, Dealroom, F6S, PitchBook а также агрегируем и анализируем данные из открытых международных 
+                        источников патенты, медиа, научные публикации.
+                    </p>
+                    <a href="#" class="bg-[#07AF91] md:w-fit w-full md:px-[74px] text-center md:py-6 py-4 rounded-lg font-semibold text-white text-lg">Узнать подробнее</a>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 w-full lg:order-2 order-1">
+                    <img src="assets/img/services/s1.png" alt="аналитика" class="w-full">
+                </div>
+            </div>
+            <div class="flex justify-between items-center lg:items-start lg:flex-row flex-col">
+                <div class="lg:w-1/3 md:w-1/2 w-full">
+                    <img src="assets/img/services/s2.png" alt="аналитика" class="w-full">
+                </div>
+                <div class="flex flex-col items-center lg:items-start gap-6 lg:w-7/12 w-full">
+                    <p class="text-[#1178B2] font-semibold lg:text-2xl md:text-lg text-base">Онлайн акселератор для IT бизнеса</p>
+                    <p class="lg:text-xl md:text-lg text-sm font-light lg:text-start text-center">Онлайн программа аскелерации IT бизнеса позволит вашей команде открыть новые горизонты и 
+                        возможности для бизнеса на глобальных рынках. В результате программы вы получите возможность презентовать свой проект 
+                        для международных инвесторов и локальных партнеров.
+                    </p>
+                    <a href="#" class="bg-[#07AF91] md:w-fit w-full md:px-[74px] text-center md:py-6 py-4 rounded-lg font-semibold text-white text-lg">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Для кого -->
+        <div class="flex flex-col">
+            <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-14">Для кого мы?</p>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-2">
+                <div class="flex flex-col justify-center items-center rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-8 pb-9">
+                    <p class="text-[#1178B2] opacity-50 text-[80px] font-extrabold my-3">01</p>
+                    <p class="font-semibold md:text-lg text-xs my-4 text-center">IT проекты на стадии идеи</p>
+                    <p class="font-light text-base text-center grow">Для стартапов, которые планируют привлечь международные инвестиции, протестировать спрос и запустить продукт</p>
+                </div>
+                <div class="flex flex-col justify-center items-center rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-8 pb-9">
+                    <p class="text-[#1178B2] opacity-50 text-[80px] font-extrabold my-3">02</p>
+                    <p class="font-semibold md:text-lg text-xs my-4">Инновационный бизнес</p>
+                    <p class="font-light text-base text-center">Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес</p>
+                </div>
+                <div class="flex flex-col lg:col-span-1 md:col-span-2 justify-center items-center rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] lg:px-8 md:px-[200px] px-8 pb-9">
+                    <p class="text-[#1178B2] opacity-50 text-[80px] font-extrabold my-3">03</p>
+                    <p class="font-semibold md:text-lg text-xs my-4">Корпорации</p>
+                    <p class="font-light text-base text-center grow">Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Исследование рынка -->
+    <div class="bg-[url('assets/img/bg/bg2.png')] bg-no-repeat bg-center bg-cover pt-32 pb-44 text-white flex flex-col gap-5">
+        <div class="mx-auto lg:px-10 lg:w-9/12">
+            <p class="font-bold lg:text-[40px] md:text-[36px] text-[24px] text-center flex lg:flex-row flex-col items-center uppercase">
+                <span class="lg:bg-[#07AF91] lg:inline flex lg:flex-row flex-col items-center lg:items-start">
+                    <span class="md:block lg:inline md:bg-[#07AF91] w-fit px-4 lg:px-0 flex md:flex-row flex-col items-center md:rounded">
+                        <span class="block md:inline bg-[#07AF91] md:bg-transparent w-fit px-2 md:px-0 rounded-t">Научитесь</span>  
+                        <span class="block md:inline bg-[#07AF91] md:bg-transparent w-fit px-2 md:px-0 rounded-t">исследовать</span>
+                    </span>  
+                    <span class="md:block lg:inline bg-[#07AF91] w-fit md:px-4 px-2 lg:px-0 md:rounded-b rounded">иностранные рынки</span>
+                    <span class="md:block lg:inline bg-[#07AF91] w-fit md:px-4 px-2 lg:px-0">и откройте новые</span>
+                    <span class="md:block lg:inline md:bg-[#07AF91] w-fit px-4 lg:px-0 flex md:flex-row flex-col items-center md:rounded">
+                        <span class="block md:inline bg-[#07AF91] md:bg-transparent w-fit px-2 md:px-0 rounded">возможности для</span>  
+                        <span class="block md:inline bg-[#07AF91] md:bg-transparent w-fit px-2 md:px-0 rounded-b">cвоего бизнеса</span>  
+                    </span>
+                    <span class="md:block lg:inline hidden md:bg-[#07AF91] w-fit px-4 lg:px-0 md:rounded-b">бизнеса</span>
+                </span>
+            </p>
+        </div>
+        <p class="mx-auto lg:text-2xl md:text-base text-sm font-medium text-center lg:text-start w-2/3">Наша команда поможет вам изучить рынки Ближнего Востока, Азии, Латинской Америки и Африки</p>
+        <a href="#" class="mx-auto font-semibold lg:text-xl md:text-xl tesm-sm md:py-7 py-5 px-10 rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8] w-fit">Получить консультацию</a>
+    </div>
+
+    <!-- Табы элементы -->
+    <div class="container px-5 min-[1216px]:px-0 mx-auto my-[100px]">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-14 lg:text-start text-center">С какими рынками мы работаем?</p>
+        <ul
+        class="flex bg-[#EEF1F4] divide-x rounded-lg lg:text-xl md:text-sm text-[10px] items-center text-[#484848] lg:mb-14 md:mb-10 mb-5"
+        role="tablist"
+        data-te-nav-ref>
+        <li role="presentation" class="flex text-center w-full">
+          <a
+            href="#tabs-home01"
+            class="flex items-center justify-center lg:h-[84px] md:h-[60px] h-[54px] w-full data-[te-nav-active]:bg-[#88BBD8] data-[te-nav-active]:rounded data-[te-nav-active]:text-white"
+            data-te-toggle="pill"
+            data-te-target="#tabs-home01"
+            data-te-nav-active
+            role="tab"
+            aria-controls="tabs-home01"
+            aria-selected="true"
+            >Ближний восток</a
+          >
+        </li>
+        <li role="presentation" class="flex text-center w-full">
+          <a
+            href="#tabs-home02"
+            class="flex items-center justify-center lg:h-[84px] md:h-[60px] h-[54px] w-full data-[te-nav-active]:bg-[#88BBD8] data-[te-nav-active]:rounded data-[te-nav-active]:text-white"
+            data-te-toggle="pill"
+            data-te-target="#tabs-home02"
+            role="tab"
+            aria-controls="tabs-home02"
+            aria-selected="false"
+            >Азия</a
+          >
+        </li>
+        <li role="presentation" class="flex text-center w-full">
+          <a
+            href="#tabs-home03"
+            class="flex items-center justify-center lg:h-[84px] md:h-[60px] h-[54px] w-full data-[te-nav-active]:bg-[#88BBD8] data-[te-nav-active]:rounded data-[te-nav-active]:text-white"
+            data-te-toggle="pill"
+            data-te-target="#tabs-home03"
+            role="tab"
+            aria-controls="tabs-home03"
+            aria-selected="false"
+            >Латинская Америка</a
+          >
+        </li>
+        <li role="presentation" class="flex text-center w-full">
+          <a
+            href="#tabs-home04"
+            class="flex items-center justify-center lg:h-[84px] md:h-[60px] h-[54px] w-full data-[te-nav-active]:bg-[#88BBD8] data-[te-nav-active]:rounded data-[te-nav-active]:text-white"
+            data-te-toggle="pill"
+            data-te-target="#tabs-home04"
+            role="tab"
+            aria-controls="tabs-home04"
+            aria-selected="false"
+            >Африка</a
+          >
+        </li>
+      </ul>
+      <div>
+        <div
+          class="hidden opacity-0 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="tabs-home01"
+          role="tabpanel"
+          aria-labelledby="tabs-home-tab01"
+          data-te-tab-active>
+          <div class="flex justify-between md:flex-row flex-col lg:gap-20 md:gap-10 gap-8 relative">
+            <img src="assets/img/bg/map.svg" alt="" class="absolute left-0 md:top-1/2 top-[5%] md:-translate-y-1/2">
+                <div class="flex flex-col gap-7 z-40">
+                    <p class="font-semibold lg:text-[32px] md:text-2xl text-lg">
+                        Чем интересен
+                        <span class="font-bold text-[#07AF91] block">Рынок MENA:</span>
+                    </p>
+                    <p class="md:text-base text-sm">ОАЭ, Саудовская Аравия,<br> 
+                        Израиль, Оман, Бахрейн, Катар,<br> 
+                        Тунис, Йемен, Египет, Алжир
+                    </p>
+                    <a href="#" class="lg:px-12 py-6 w-full lg:w-fit md:flex hidden md:justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+                    <div class="flex gap-3 items-center">
+                        <img src="assets/img/manager/fatima.png" alt="" class="w-[62px] h-[62px]">
+                        <div class="flex flex-col">
+                            <p class="md:text-base text-xs">Фатима</p>
+                            <p class="md:text-sm text-[10px] text-[#727272]">Менеджер по MENA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-5 lg:mr-[156px] z-40 md:h-fit">
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex md:flex-row flex-col items-center font-extrabold md:mb-6 mb-2"> >5,5 <span class="lg:text-2xl md:text-xl text-base">Млрд</span></p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Инвестиции pre-seed, seed</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2"> >300</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Акселераторов, инкубаторов</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2">73</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Венчурных фонда</p>
+                    </div>
+                    <a href="#" class="flex flex-col justify-center items-center bg-[#1178B2] hover:bg-[#07AF91] rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <img src="assets/img/icon/load.svg" alt="">
+                        <p class="text-white lg:text-xl md:text-sm text-xs text-center md:mt-6 mt-2">Скачать отчет
+                            <span class="block">по рынку MENA</span> 
+                        </p>
+                    </a>
+                </div>
+                <a href="#" class="lg:px-12 py-6 w-full lg:w-fit flex md:hidden justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+            </div>
+        </div>
+        <div
+          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="tabs-home02"
+          role="tabpanel"
+          aria-labelledby="tabs-home-tab02">
+          <div class="flex justify-between md:flex-row flex-col lg:gap-20 md:gap-10 gap-8 relative">
+            <img src="assets/img/bg/map.svg" alt="" class="absolute left-0 md:top-1/2 top-[5%] md:-translate-y-1/2">
+                <div class="flex flex-col gap-7 z-40">
+                    <p class="font-semibold lg:text-[32px] md:text-2xl text-lg">
+                        Чем интересен
+                        <span class="font-bold text-[#07AF91] block">Рынок MENA:</span>
+                    </p>
+                    <p class="md:text-base text-sm">ОАЭ, Саудовская Аравия,<br> 
+                        Израиль, Оман, Бахрейн, Катар,<br> 
+                        Тунис, Йемен, Египет, Алжир
+                    </p>
+                    <a href="#" class="lg:px-12 py-6 w-full lg:w-fit md:flex hidden md:justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+                    <div class="flex gap-3 items-center">
+                        <img src="assets/img/manager/fatima.png" alt="" class="w-[62px] h-[62px]">
+                        <div class="flex flex-col">
+                            <p class="md:text-base text-xs">Фатима</p>
+                            <p class="md:text-sm text-[10px] text-[#727272]">Менеджер по MENA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-5 lg:mr-[156px] z-40 md:h-fit">
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex md:flex-row flex-col items-center font-extrabold md:mb-6 mb-2"> >5,5 <span class="lg:text-2xl md:text-xl text-base">Млрд</span></p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Инвестиции pre-seed, seed</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2"> >300</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Акселераторов, инкубаторов</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2">73</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Венчурных фонда</p>
+                    </div>
+                    <a href="#" class="flex flex-col justify-center items-center bg-[#1178B2] hover:bg-[#07AF91] rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <img src="assets/img/icon/load.svg" alt="">
+                        <p class="text-white lg:text-xl md:text-sm text-xs text-center md:mt-6 mt-2">Скачать отчет
+                            <span class="block">по рынку MENA</span> 
+                        </p>
+                    </a>
+                </div>
+                <a href="#" class="lg:px-12 py-6 w-full lg:w-fit flex md:hidden justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+            </div>
+        </div>
+        <div
+          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="tabs-home03"
+          role="tabpanel"
+          aria-labelledby="tabs-home-tab03">
+          <div class="flex justify-between md:flex-row flex-col lg:gap-20 md:gap-10 gap-8 relative">
+            <img src="assets/img/bg/map.svg" alt="" class="absolute left-0 md:top-1/2 top-[5%] md:-translate-y-1/2">
+                <div class="flex flex-col gap-7 z-40">
+                    <p class="font-semibold lg:text-[32px] md:text-2xl text-lg">
+                        Чем интересен
+                        <span class="font-bold text-[#07AF91] block">Рынок MENA:</span>
+                    </p>
+                    <p class="md:text-base text-sm">ОАЭ, Саудовская Аравия,<br> 
+                        Израиль, Оман, Бахрейн, Катар,<br> 
+                        Тунис, Йемен, Египет, Алжир
+                    </p>
+                    <a href="#" class="lg:px-12 py-6 w-full lg:w-fit md:flex hidden md:justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+                    <div class="flex gap-3 items-center">
+                        <img src="assets/img/manager/fatima.png" alt="" class="w-[62px] h-[62px]">
+                        <div class="flex flex-col">
+                            <p class="md:text-base text-xs">Фатима</p>
+                            <p class="md:text-sm text-[10px] text-[#727272]">Менеджер по MENA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-5 lg:mr-[156px] z-40 md:h-fit">
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex md:flex-row flex-col items-center font-extrabold md:mb-6 mb-2"> >5,5 <span class="lg:text-2xl md:text-xl text-base">Млрд</span></p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Инвестиции pre-seed, seed</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2"> >300</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Акселераторов, инкубаторов</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2">73</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Венчурных фонда</p>
+                    </div>
+                    <a href="#" class="flex flex-col justify-center items-center bg-[#1178B2] hover:bg-[#07AF91] rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <img src="assets/img/icon/load.svg" alt="">
+                        <p class="text-white lg:text-xl md:text-sm text-xs text-center md:mt-6 mt-2">Скачать отчет
+                            <span class="block">по рынку MENA</span> 
+                        </p>
+                    </a>
+                </div>
+                <a href="#" class="lg:px-12 py-6 w-full lg:w-fit flex md:hidden justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+            </div>
+        </div>
+        <div
+          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+          id="tabs-home04"
+          role="tabpanel"
+          aria-labelledby="tabs-home-tab04">
+          <div class="flex justify-between md:flex-row flex-col lg:gap-20 md:gap-10 gap-8 relative">
+            <img src="assets/img/bg/map.svg" alt="" class="absolute left-0 md:top-1/2 top-[5%] md:-translate-y-1/2">
+                <div class="flex flex-col gap-7 z-40">
+                    <p class="font-semibold lg:text-[32px] md:text-2xl text-lg">
+                        Чем интересен
+                        <span class="font-bold text-[#07AF91] block">Рынок MENA:</span>
+                    </p>
+                    <p class="md:text-base text-sm">ОАЭ, Саудовская Аравия,<br> 
+                        Израиль, Оман, Бахрейн, Катар,<br> 
+                        Тунис, Йемен, Египет, Алжир
+                    </p>
+                    <a href="#" class="lg:px-12 py-6 w-full lg:w-fit md:flex hidden md:justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+                    <div class="flex gap-3 items-center">
+                        <img src="assets/img/manager/fatima.png" alt="" class="w-[62px] h-[62px]">
+                        <div class="flex flex-col">
+                            <p class="md:text-base text-xs">Фатима</p>
+                            <p class="md:text-sm text-[10px] text-[#727272]">Менеджер по MENA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-5 lg:mr-[156px] z-40 md:h-fit">
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex md:flex-row flex-col items-center font-extrabold md:mb-6 mb-2"> >5,5 <span class="lg:text-2xl md:text-xl text-base">Млрд</span></p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Инвестиции pre-seed, seed</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2"> >300</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Акселераторов, инкубаторов</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <p class="text-[#1178B2] opacity-50 lg:text-5xl md:text-4xl text-2xl flex items-center font-extrabold md:mb-6 mb-2">73</p>
+                        <p class="text-[#101010] opacity-50 lg:text-base md:text-sm text-xs text-center">Венчурных фонда</p>
+                    </div>
+                    <a href="#" class="flex flex-col justify-center items-center bg-[#1178B2] hover:bg-[#07AF91] rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] py-16 px-8 lg:max-h-[200px] max-h-[135px]">
+                        <img src="assets/img/icon/load.svg" alt="">
+                        <p class="text-white lg:text-xl md:text-sm text-xs text-center md:mt-6 mt-2">Скачать отчет
+                            <span class="block">по рынку MENA</span> 
+                        </p>
+                    </a>
+                </div>
+                <a href="#" class="lg:px-12 py-6 w-full lg:w-fit flex md:hidden justify-center font-semibold text-lg text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8]">Выйти на рынок</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Плеер -->
+    <div class="container px-5 min-[1216px]:px-0 mx-auto">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-6 lg:text-start text-center">Об акселераторе IT бизнеса</p>
+        <p class="font-light lg:text-xl md:text-base text-sm mb-5 lg:text-start text-center">Программа акселератора расчитана на 8 недель интенсивного онлайн  курса с вебинарами приглашенных экспертов по международным рынкам, 
+            разборами ваших идей и проектов 
+        </p>
+        <div class="grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-2 mb-5">
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex md:flex-col flex-row md:justify-center gap-5 md:gap-0 items-center md:py-[78px] py-14 px-7 md:px-0">
+                <img src="assets/img/icon/3.svg" alt="" class="md:grow md:w-[100px] md:max-h-[100px] grow max-w-[71px]">
+                <p class="lg:text-xl md:text-base text-sm md:mt-7 text-center md:grow">Месяца обучения</p>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex md:flex-col flex-row md:justify-center gap-5 md:gap-0 items-center md:py-[78px] py-14 px-7 md:px-0">
+                <img src="assets/img/icon/world.svg" alt="" class="md:grow md:w-[100px] md:max-h-[100px] grow max-w-[71px]">
+                <p class="lg:text-xl md:text-base text-sm md:mt-7 text-center md:grow">Приглашенные эксперты</p>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex md:flex-col flex-row md:justify-center gap-5 md:gap-0 items-center md:py-[78px] py-14 px-7 md:px-0">
+                <img src="assets/img/icon/user.svg" alt="" class="md:grow md:w-[100px] md:max-h-[100px] grow max-w-[71px]">
+                <p class="lg:text-xl md:text-base text-sm md:mt-7 text-center md:grow">Персональный менеджер</p>
+            </div>
+        </div>
+        <div class="lg:h-[675px] md:h-[345px] h-[200px] w-full bg-black flex flex-col items-center justify-center rounded-lg">
+            <p class="lg:text-xl md:text-lg text-base font-semibold text-white lg:mb-9 mb-5 lg:w-full w-2/3 text-center">Об акселерационной программе</p>
+            <img src="assets/img/icon/play.png" alt="" class="cursor-pointer md:max-w-[89px] max-w-[63px]">
+        </div>
+    </div>
+
+    <!-- Аккордион элементы -->
+    <div class="container px-5 min-[1216px]:px-0 mx-auto my-[100px]">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-6 lg:text-start text-center">Программа акселератора</p>
+        <div id="accordionExample" class="flex flex-col gap-5">
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+              <h2 id="heading1">
+                <button
+                  class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                  type="button"
+                  data-te-collapse-init
+                  data-te-target="#collapse1"
+                  aria-expanded="true"
+                  aria-controls="collapse1">
+                <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                    <p class="text-[#2A79C2] font-bold">Модуль 1 <span class="text-black md:hidden">4 недели</span></p>
+                    <p class="text-black text-center">Тенденции и тренды современного мира</p>
+                </div>
+                <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                    <span
+                    class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                    <img src="assets/img/icon/arrowD.svg" alt="">
+                </span>
+                </div>
+                </button>
+              </h2>
+              <div
+                id="collapse1"
+                class="!visible"
+                data-te-collapse-item
+                data-te-collapse-show
+                aria-labelledby="heading1"
+                data-te-parent="#accordionExample">
+                <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading2">
+                  <button
+                    class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapse2"
+                    aria-expanded="true"
+                    aria-controls="collapse2">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                      <p class="text-[#2A79C2] font-bold">Модуль 2</p>
+                      <p class="text-black">Стартап подход к созданию международного IT продукта</p>
+                  </div>
+                  <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapse2"
+                  class="!visible hidden"
+                  data-te-collapse-item
+                  aria-labelledby="heading2"
+                  data-te-parent="#accordionExample">
+                  <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading3">
+                  <button
+                    class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapse3"
+                    aria-expanded="true"
+                    aria-controls="collapse3">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                      <p class="text-[#2A79C2] font-bold">Модуль 3</p>
+                      <p class="text-black">Бизнес моделирование и поиск Product Market Fit</p>
+                  </div>
+                    <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                  </button>
+                </h2>
+                <div
+                  id="collapse3"
+                  class="!visible hidden"
+                  data-te-collapse-item
+                  aria-labelledby="heading3"
+                  data-te-parent="#accordionExample">
+                  <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading4">
+                    <button
+                        class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                        type="button"
+                        data-te-collapse-init                   
+                        data-te-collapse-collapsed
+                        data-te-target="#collapse4"
+                        aria-expanded="true"
+                        aria-controls="collapse4">
+                        <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                        <p class="text-[#2A79C2] font-bold">Модуль 4</p>
+                        <p class="text-black">Определение рынка, поиск и исследование Целевой аудитории</p>
+                    </div>
+                    <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                    </button>
+                </h2>
+                <div
+                  id="collapse4"
+                  class="!visible hidden"
+                  data-te-collapse-item
+                  aria-labelledby="heading4"
+                  data-te-parent="#accordionExample">
+                  <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                  </div>
+                </div>
+            </div>
+  
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading5">
+                <button
+                    class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapse5"
+                    aria-expanded="true"
+                    aria-controls="collapse5">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                    <p class="text-[#2A79C2] font-bold">Модуль 5</p>
+                    <p class="text-black">Что такое MVP и почему это важно</p>
+                    </div>
+                    <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                </button>
+                </h2>
+                <div
+                id="collapse5"
+                class="!visible hidden"
+                data-te-collapse-item
+                aria-labelledby="heading5"
+                data-te-parent="#accordionExample">
+                <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                </div>
+                </div>
+            </div>
+  
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading6">
+                <button
+                    class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapse6"
+                    aria-expanded="true"
+                    aria-controls="collapse6">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                    <p class="text-[#2A79C2] font-bold">Модуль 6</p>
+                    <p class="text-black">Unit экономика и финансовое моделирование</p>
+                    </div>
+                    <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                    </span>
+                </button>
+                </h2>
+                <div
+                id="collapse6"
+                class="!visible hidden"
+                data-te-collapse-item
+                aria-labelledby="heading6"
+                data-te-parent="#accordionExample">
+                <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading7">
+                  <button
+                    class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapse7"
+                    aria-expanded="true"
+                    aria-controls="collapse7">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                      <p class="text-[#2A79C2] font-bold">Модуль 7</p>
+                      <p class="text-black">Что такое дорожная карта продукта?</p>
+                    </div>
+                    <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                    </span>
+                  </button>
+                </h2>
+                <div
+                  id="collapse7"
+                  class="!visible hidden"
+                  data-te-collapse-item
+                  aria-labelledby="heading7"
+                  data-te-parent="#accordionExample">
+                  <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                      <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                  </div>
+                </div>
+            </div>
+  
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading8">
+                <button
+                    class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapse8"
+                    aria-expanded="true"
+                    aria-controls="collapse8">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                    <p class="text-[#2A79C2] font-bold">Модуль 8</p>
+                    <p class="text-black">Документы дя международных инвесторов</p>
+                    </div>
+                    <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                    </span>
+                </button>
+                </h2>
+                <div
+                id="collapse8"
+                class="!visible hidden"
+                data-te-collapse-item
+                aria-labelledby="heading8"
+                data-te-parent="#accordionExample">
+                <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                </div>
+                </div>
+            </div>
+  
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2 id="heading9">
+                <button
+                    class="group rounded-lg relative flex md:justify-between justify-center w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button"
+                    data-te-collapse-init
+                    data-te-collapse-collapsed
+                    data-te-target="#collapse9"
+                    aria-expanded="true"
+                    aria-controls="collapse9">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                    <p class="text-[#2A79C2] font-bold">Модуль 9</p>
+                    <p class="text-black">Открытие юридического лица. Возможности для стартапов</p>
+                    </div>
+                    <div class="absolute md:relative -bottom-3 md:bottom-0 left-1/2 md:left-0 -translate-x-2 md:translate-x-0 lg:w-[39px] lg:h-[39px] md:w-[30px] md:h-[30px] w-6 h-6 bg-[#2A79C2] rounded-full flex items-center justify-center">
+                        <span
+                        class="rotate-[-180deg] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-white motion-reduce:transition-none ">
+                        <img src="assets/img/icon/arrowD.svg" alt="">
+                    </span>
+                    </div>
+                    </span>
+                </button>
+                </h2>
+                <div
+                id="collapse9"
+                class="!visible hidden"
+                data-te-collapse-item
+                aria-labelledby="heading9"
+                data-te-parent="#accordionExample">
+                <div class="divide-y divide-[#E9E9E9] text-[#555555] flex flex-col">
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs">3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?</a>
+                    <a href="#" class="md:px-12 px-4 py-7 lg:text-base md:text-sm text-xs text-[#2A79C2]">9 видео роликов, вебинар с приглашенным экспертом</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <h2>
+                <button
+                    class="group rounded-lg relative flex w-full items-center border-0 bg-white py-6 md:px-12 px-10 text-black text-left text-base  transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none  [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] "
+                    type="button">
+                    <div class="flex md:flex-row flex-col items-center gap-4 lg:text-xl md:text-base text-xs">
+                    <p class="text-[#2A79C2] font-bold">Демо день</p>
+                </div>
+                </button>
+                </h2>
+            </div>
+            <a href="#" class="px-7 py-6 font-semibold text-white lg:text-lg md:text-base text-sm rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8] w-fit">Получить полную программу</a>
+        </div>
+    </div>
+
+    <!-- Партнеры и инвесторы -->
+    <div class="lg:bg-[url('assets/img/bg/bg5.svg')] md:bg-[url('assets/img/bg/bg7.svg')] bg-[url('assets/img/bg/bg6.svg')] bg-no-repeat bg-cover h-fit lg:py-16 md:p-[116px] py-[100px]">
+        <div class="container px-5 min-[1216px]:px-0 mx-auto flex lg:flex-row flex-col justify-between lg:gap-0 gap-12">
+            <div class="flex flex-col items-center lg:items-start gap-4 lg:w-1/2 text-white">
+                <p class="font-bold lg:text-[40px] md:text-[32px] text-2xl text-white text-center lg:text-start">Попадите на радары инвесторов и партнеров</p>
+                <p class="md:text-lg text-sm lg:w-9/12 text-center lg:text-start">В результате прохождения обучения мы создадим 
+                    профили вашей компании на всех международных 
+                    скаутинговых площадках
+                </p>
+                <a href="#" class="bg-[#07AF91] rounded-lg md:text-lg text-base font-semibold px-9 md:py-7 py-5 md:w-fit w-full text-center">Записаться в акселератор</a>
+            </div>
+            <div class="grid grid-cols-2 gap-5 lg:w-2/5 w-4/5 relative select-none">
+                <img src="assets/img/icon/ceil.png" alt="" class="xl:absolute absolute top-10 xl:-right-[5%] -right-[25%] lg:hidden xl:block">
+                <div class="z-40 rounded-lg bg-white shadow-[0px_0px_20px_rgba(0,0,0,0.25)] px-6 md:py-10  w-full flex items-center justify-center md:min-h-[100px] h-[66px] grow">
+                    <img src="assets/img/partners/PB.png" alt="" class="w-1/2">
+                </div>
+                <div class="z-40 rounded-lg bg-white shadow-[0px_0px_20px_rgba(0,0,0,0.25)] px-6 md:py-10  w-full flex items-center justify-center md:min-h-[100px] h-[66px] grow">
+                    <img src="assets/img/partners/CB.png" alt="" class="w-1/2">
+                </div>
+                <div class="z-40 rounded-lg bg-white shadow-[0px_0px_20px_rgba(0,0,0,0.25)] px-6 md:py-10  w-full flex items-center justify-center md:max-h-[100px] h-[66px] grow">
+                    <img src="assets/img/partners/DR.png" alt="" class="w-1/2">
+                </div>
+                <div class="z-40 rounded-lg bg-white shadow-[0px_0px_20px_rgba(0,0,0,0.25)] px-6 md:py-10  w-full flex items-center justify-center md:max-h-[100px] h-[66px] grow">
+                    <img src="assets/img/partners/Vadar.png" alt="" class="w-1/2">
+                </div>
+                <div class="z-40 rounded-lg bg-white shadow-[0px_0px_20px_rgba(0,0,0,0.25)] px-6 md:py-10  w-full flex items-center justify-center md:max-h-[100px] h-[66px] grow">
+                    <img src="assets/img/partners/F65.png" alt="" class="w-[40px]">
+                </div>
+                <div class="z-40 rounded-lg bg-white shadow-[0px_0px_20px_rgba(0,0,0,0.25)] px-6 md:py-10  w-full flex items-center justify-center md:max-h-[100px] h-[66px] grow">
+                    <img src="assets/img/partners/AL.png" alt="" class="w-[40px]">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Результат -->
+    <div class="container px-5 min-[1216px]:px-0 mx-auto my-[100px]">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-[40px] lg:text-start text-center">Что вы получите в результате?</p>
+        <div class="grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-2">
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col justify-center items-center py-7 lg:px-12 md:px-3 px-10 text-center">
+                <p class="text-[#1178B2] opacity-50 font-extrabold lg:text-[80px] md:text-[64px] text-[48px]">01</p>
+                <p class="lg:text-lg text-sm lg:mb-4 md:mb-2 mb-0 font-semibold grow">Документы по продукту</p>
+                <p class="lg:text-[15px] md:text-sm text-xs font-light grow">Бизнес план, отчет по анализу рынка, маркетинговый план, unit экономика, список гипотез, проект MVP</p>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col justify-center items-center py-7 lg:px-12 md:px-3 px-10 text-center">
+                <p class="text-[#1178B2] opacity-50 font-extrabold lg:text-[80px] md:text-[64px] text-[48px]">02</p>
+                <p class="lg:text-lg text-sm lg:mb-4 md:mb-2 mb-0 font-semibold grow">Обратная связь от рынка</p>
+                <p class="lg:text-[15px] md:text-sm text-xs font-light grow">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col justify-center items-center py-7 lg:px-12 md:px-3 px-10 text-center">
+                <p class="text-[#1178B2] opacity-50 font-extrabold lg:text-[80px] md:text-[64px] text-[48px]">03</p>
+                <p class="lg:text-lg text-sm lg:mb-4 md:mb-2 mb-0 font-semibold grow">Продвижение продукта</p>
+                <p class="lg:text-[15px] md:text-sm text-xs font-light grow">Продвижение продукта через аналитические системы партнеров</p>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col justify-center items-center py-7 lg:px-12 md:px-3 px-10 text-center">
+                <p class="text-[#1178B2] opacity-50 font-extrabold lg:text-[80px] md:text-[64px] text-[48px]">04</p>
+                <p class="lg:text-lg text-sm lg:mb-4 md:mb-2 mb-0 font-semibold grow">Подписка на отчеты</p>
+                <p class="lg:text-[15px] md:text-sm text-xs font-light grow">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col justify-center items-center py-7 lg:px-12 md:px-3 px-10 text-center">
+                <p class="text-[#1178B2] opacity-50 font-extrabold lg:text-[80px] md:text-[64px] text-[48px]">05</p>
+                <p class="lg:text-lg text-sm lg:mb-4 md:mb-2 mb-0 font-semibold grow">Подписка на отчеты</p>
+                <p class="lg:text-[15px] md:text-sm text-xs font-light grow">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col justify-center items-center py-7 lg:px-12 md:px-3 px-10 text-center">
+                <p class="text-[#1178B2] opacity-50 font-extrabold lg:text-[80px] md:text-[64px] text-[48px]">06</p>
+                <p class="lg:text-lg text-sm lg:mb-4 md:mb-2 mb-0 font-semibold grow">Подписка на отчеты</p>
+                <p class="lg:text-[15px] md:text-sm text-xs font-light grow">Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Стоимость -->
+    <div class="container px-5 min-[1216px]:px-0 mx-auto">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-[40px] lg:text-start text-center">Стоимость</p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-5 gap-2">
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col py-8 divide-y">
+                <div class="flex flex-col items-center gap-4 pb-7 px-14">
+                    <img src="assets/img/icon/file.svg" alt="" class="h-[76px]">
+                    <p class="font-semibold md:text-lg text-base lg:text-xl text-center">Анализ международных рынков </p>
+                </div>
+                <div class="pt-6 pb-10 px-10 grow">
+                    <p class="lg:text-lg md:text-base text-sm mb-4 font-medium">Что входит в отчет?</p>
+                    <ol class="list-decimal list-inside lg:text-base md:text-sm text-xs">
+                        <li>Анализ конкурентов</li>
+                        <li>Анализ инвесторов</li>
+                        <li>Размеры рынка (TAM,SAM,SOM)</li>
+                        <li>Анализ СМИ</li>
+                        <li>Анализ запрос в сети интернет</li>
+                    </ol>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Готовность</p>
+                    <p class="lg:text-base md:text-sm text-xs">7 раб. дней</p>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Язык</p>
+                    <p class="lg:text-base md:text-sm text-xs">рус. / англ.</p>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Стоимость</p>
+                    <p class="font-bold text-[#1178B2] lg:text-xl md:text-base text-sm">$1 000 </p>
+                </div>
+                <a href="#" class="flex justify-center md:py-5 py-4 mx-10 font-semibold md:text-lg text-base text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8] ">Оставить заявку</a>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col py-8 divide-y">
+                <div class="flex flex-col items-center gap-4 pb-7 lg:px-[90px] px-16">
+                    <img src="assets/img/icon/settings.svg" alt="" class="h-[76px]">
+                    <p class="font-semibold md:text-lg text-base lg:text-xl text-center">Упаковка стартапа под локальные рынки</p>
+                </div>
+                <div class="pt-6 pb-10 px-10 grow">
+                    <p class="lg:text-lg md:text-base text-sm mb-4 font-medium">Что входит в услугу?</p>
+                    <ol class="list-decimal list-inside lg:text-base md:text-sm text-xs">
+                        <li>Анализ локальных рынков</li>
+                        <li>Бизнес план</li>
+                        <li>Питч презентация</li>
+                        <li>Финансовый план</li>
+                        <li>Расчет юнит экономики</li>
+                        <li>Проведение каст дева</li>
+                    </ol>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Готовность</p>
+                    <p class="lg:text-base md:text-sm text-xs">7 раб. дней</p>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Язык</p>
+                    <p class="lg:text-base md:text-sm text-xs">рус. / англ.</p>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Стоимость</p>
+                    <p class="font-bold text-[#1178B2] lg:text-xl md:text-base text-sm">$1 000 </p>
+                </div>
+                <a href="#" class="flex justify-center md:py-5 py-4 mx-10 font-semibold md:text-lg text-base text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8] ">Оставить заявку</a>
+            </div>
+            <div class="rounded-lg bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] flex flex-col py-8 divide-y">
+                <div class="flex flex-col items-center gap-4 pb-7 ">
+                    <img src="assets/img/icon/rocket.svg" alt="" class="h-[76px]">
+                    <p class="font-semibold md:text-lg text-base lg:text-xl text-center ">Акселератор<br> вашего бизнеса</p>
+                </div>
+                <div class="pt-6 pb-10 px-10 grow">
+                    <p class="lg:text-lg md:text-base text-sm mb-4 font-medium">Что входит в акселератор?</p>
+                    <ol class="list-decimal list-inside lg:text-base md:text-sm text-xs">
+                        <li>Онлайн доступ к курсам</li>
+                        <li>Документы для бизнеса</li>
+                        <li>Питч презентация</li>
+                        <li>Демо день</li>
+                        <li>Провдижение по результатам</li>
+                    </ol>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Готовность</p>
+                    <p class="lg:text-base md:text-sm text-xs">7 раб. дней</p>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Язык</p>
+                    <p class="lg:text-base md:text-sm text-xs">рус. / англ.</p>
+                </div>
+                <div class="flex justify-between items-center px-10 py-6">
+                    <p class="font-medium lg:text-lg md:text-base text-sm">Стоимость</p>
+                    <p class="font-bold text-[#1178B2] lg:text-xl md:text-base text-sm">$1 000 </p>
+                </div>
+                <a href="#" class="flex justify-center md:py-5 py-4 mx-10 font-semibold md:text-lg text-base text-white rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8] ">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Кто мы -->
+    <div class="container md:px-[70px] px-5 min-[1216px]:px-0 mx-auto my-[100px]">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-[80px] lg:text-start text-center">Кто мы?</p>
+        <div class="flex lg:flex-row flex-col lg:justify-between items-center gap-16">
+            <div class="flex md:w-1/2 w-full px-10 md:px-0">
+                <img src="assets/img/bg/we.png" alt="" class="w-full">
+            </div>
+            <div class="flex flex-col text-xl font-light lg:w-1/2 w-full lg:gap-10 text-center lg:text-start">
+                <p>
+                    <span class="font-semibold text-xl text-[#1178B2]">INNOMA.VC</span> -  Международное аналитическое агентство по запуску IT бизнеса на локальных рынках регионов Азии, 
+                    Ближнего Востока, Латинской Америки, Африки.
+                </p>
+                <p>
+                    Наша команда состоит из профессионалов своего дела и основной нашей целью является помощь IT компаниям получить 
+                    необходимые знания и пакеты документов, чтобы успешно запустить свой продукт на международных рынках.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Роман -->
+    <div class="container mx-auto min-h-[414px] flex lg:flex-row flex-col justify-between items-center lg:items-start lg:gap-28 rounded-lg shadow-[0px_0px_30px_rgba(0,0,0,0.09)] lg:px-16 md:px-9">
+        <div class="flex lg:w-2/5 md:w-1/2 w-2/3h-full lg:order-1 order-2 relative">
+            <img src="assets/img/bg/roman.png" alt="" class="w-full">
+            <div class="text-sm lg:hidden absolute md:bottom-9 md:-left-1/2 right-[20px] top-[20px] md:top-auto">
+                <p class="font-medium">Роман Гайн</p>
+                <span class="font-light">Основатель <span class="block md:flex">INNOMA.VC</span></span>
+            </div>
+        </div>
+        <div class="flex flex-col lg:w-3/5 lg:py-[44px] lg:min-h-[414px] lg:px-0 md:px-16 p-7 lg:order-2 order-1">
+            <p class="leading-8 italic lg:text-start md:text-center text-start md:text-base text-sm">Всем привет!<br> Меня зовут Роман. Последние 6 лет я являюсь частью 
+                инновационной экосистемы СНГ,  прошел путь от проектного 
+                менеджера до руководителя продукта по автоматизированному скаутингу и скорингу стартапов. 
+                За 6 лет работы я увидел  множество ошибок и отсутствие ориентации акселерационных программ под запросы стартапов. 
+                Все акселераторы выполнялись ради акселераторв и выполнения КПЭ. 
+            </p>
+            <div class="mt-auto md:text-sm text-[10px] lg:block hidden">
+                <p class="font-medium">Роман Гайн</p>
+                <span class="font-light">Основатель INNOMA.VC</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Мероприятие -->
+    <div class="container mx-auto my-[100px]">
+        <div class="swiper swiper2">
+            <div class="swiper-wrapper md:pl-10 px-16 lg:pl-0">
+                <div class="swiper-slide"><img src="assets/img/events/e4.png" alt="" class="w-full object-cover"></div>
+                <div class="swiper-slide"><img src="assets/img/events/e5.png" alt="" class="w-full object-cover"></div>
+                <div class="swiper-slide"><img src="assets/img/events/e6.png" alt="" class="w-full object-cover"></div>
+                <div class="swiper-slide"><img src="assets/img/events/e7.png" alt="" class="w-full object-cover"></div>
+                <div class="swiper-slide"><img src="assets/img/events/e8.png" alt="" class="w-full object-cover"></div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Менеджеры -->
+    <div class="container pl-5 min-[1216px]:pl-0 mx-auto my-[100px]">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-[40px] lg:text-start text-center">Эксперты и трекеры программы</p>
+        <div class="swiper swiper1 pb-10 overflow-x-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex flex-col items-center">
+                    <img src="assets/img/manager/m1.png" alt="" class="md:max-w-[186px] md:max-h-[186px] max-w-[150px] max-h-[150px] rounded-full">
+                    <p class="font-semibold md:text-lg text-base">Майкл Донован</p>
+                    <p class="lg:text-[15px] md:text-sm text-xs font-light grow text-center">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide flex flex-col items-center">
+                        <img src="assets/img/manager/m2.png" alt="" class="md:max-w-[186px] md:max-h-[186px] max-w-[150px] max-h-[150px] rounded-full">
+                        <p class="font-semibold md:text-lg text-base">Фатими Юсуф</p>
+                        <p class="lg:text-[15px] md:text-sm text-xs font-light grow text-center">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide flex flex-col items-center">
+                        <img src="assets/img/manager/m3.png" alt="" class="md:max-w-[186px] md:max-h-[186px] max-w-[150px] max-h-[150px] rounded-full">
+                        <p class="font-semibold md:text-lg text-base">Эшли Абрамс</p>
+                        <p class="lg:text-[15px] md:text-sm text-xs font-light grow text-center">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide flex flex-col items-center">
+                        <img src="assets/img/manager/m4.png" alt="" class="md:max-w-[186px] md:max-h-[186px] max-w-[150px] max-h-[150px] rounded-full">
+                        <p class="font-semibold md:text-lg text-base">Юрий Ким</p>
+                        <p class="lg:text-[15px] md:text-sm text-xs font-light grow text-center">Проведение исследования целевой аудитории позволит сформировать Product market fit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-prev flex bottom-0 top-auto lg:top-1/2  justify-start lg:justify-center items-center w-fit lg:w-10 lg:h-10 lg:rounded-full lg:bg-[#2A79C2]">
+                <img src="assets/img/icon/arrowPrev.svg" alt="" class="lg:block hidden">
+                <img src="assets/img/icon/arrowLineP.svg" alt="" class="lg:hidden block md:w-[154px] w-[86px]">
+            </div>
+            <div class="swiper-button-next flex bottom-0 top-auto lg:top-1/2  justify-end lg:justify-center items-center w-fit lg:w-10 lg:h-10 lg:rounded-full lg:bg-[#2A79C2]">
+                <img src="assets/img/icon/arrowNext.svg" alt="" class="lg:block hidden">
+                <img src="assets/img/icon/arrowLineN.svg" alt=""class="lg:hidden block md:w-[154px] w-[86px]">
+            </div>
+        </div>
+    </div>
+
+    <!-- Партнеры -->
+    <div class="container px-5 md:px-[140px] min-[1216px]:px-0 mx-auto my-[100px]">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-[40px] lg:text-start text-center">Наши партнеры</p>
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-5 select-none">
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/CB.svg" alt="">
+            </div>
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/DR.svg" alt="">
+            </div>
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/cool.svg" alt="">
+            </div>
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/ED.svg" alt="">
+            </div>
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/Dtec.svg" alt="">
+            </div>
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/i5.svg" alt="">
+            </div>
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/Rakuten.svg" alt="">
+            </div>
+            <div class="rounded-lg md:flex-col flex-row bg-white shadow-[0px_0px_30px_rgba(0,0,0,0.09)] px-6 py-9 flex items-center justify-center md:max-h-[100px] grow max-h-[66px]">
+                <img src="assets/img/partners/Hub.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Стать партнером -->
+    <div class="bg-[url('assets/img/bg/bg3.png')] bg-no-repeat bg-cover bg-center h-fit lg:py-[130px] py-[120px]">
+        <div class="container mx-auto flex flex-col items-center gap-5 text-white">
+            <p class="font-bold lg:text-[40px] md:text-[32px] text-2xl md:w-3/4 w-full px-6 md:px-0 text-center">Мы создаем международное сообщество экспертов и партнеров</p>
+            <p class="font-regular lg:text-xl md:text-base text-xs text-center md:w-2/3 w-full px-6 md:px-0">Если вы или ваш бизнес может быть полезен IT  командам при выходе на международные рынки,  
+                приглашем вас стать нашим партнером
+            </p>
+            <a href="#" class="px-20 md:py-6 py-4 font-semibold text-lg rounded-lg bg-gradient-to-r from-[#61B5E4] to-[#016CA8] w-fit">Стать партнером</a>
+        </div>
+    </div>
+
+    <!-- Мероприятия -->
+    <div class="container px-5 min-[1216px]:px-0 mx-auto my-[100px]">
+        <p class="text-[#1178B2] font-bold md:text-4xl text-2xl mb-[40px] lg:text-start text-center">Мероприятия и события</p>
+        <div class="grid md:grid-cols-3 md:gap-5 gap-2">
+            <div class="rounded-lg bg-white flex md:flex-col flex-row shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <a href="#" class="min-w-[86px] md:w-full">
+                    <picture class="w-fit">
+                        <source srcset="assets/img/events/mena-375.png" media="(max-width:767px)">
+                        <img src="assets/img/events/e2.png" alt="" class="">
+                    </picture>
+                </a> 
+                <div class="flex flex-col md:py-5 md:px-7 p-5">
+                    <p class="font-semibold lg:text-xl md:text-sm text-xs mb-2 md:mb-0">Новый отчет по MENA</p>
+                    <p class="md:leading-6 leading-0 lg:text-base md:text-xs text-[10px]">Аналитический отчет по рынкам 
+                        Ближнего Востока (инвесторы, 
+                        объем раундов, ТОП сферы)
+                    </p>
+                    <p class="md:mt-9 mt-auto lg:text-sm md:text-sx text-[10px] font-light">22.11.2022</p>
+                </div>
+            </div>
+            <div class="rounded-lg bg-white flex md:flex-col flex-row shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <a href="#" class="min-w-[86px] md:w-full">
+                    <picture>
+                        <source srcset="assets/img/events/vebinar-375.png" media="(max-width:767px)">
+                        <img src="assets/img/events/e1.png" alt="" class="">
+                    </picture>
+                </a>
+                <div class="flex flex-col md:py-5 md:px-7 p-5">
+                    <p class="font-semibold lg:text-xl md:text-sm text-xs mb-2 md:mb-0">Вебинар по особенностям 
+                        рынков Ближнего Востока</p>
+                    <p class="md:leading-6 leading-0 lg:text-base md:text-xs text-[10px]">Поговорим с экспертами рынков 
+                        в формате дискуссии
+                    </p>
+                    <p class="md:mt-9 mt-auto lg:text-sm md:text-sx text-[10px] font-light">22.11.2022</p>
+                </div>
+            </div>
+            <div class="rounded-lg bg-white flex md:flex-col flex-row shadow-[0px_0px_30px_rgba(0,0,0,0.09)]">
+                <a href="#" class="min-w-[86px] md:w-full">
+                    <picture>
+                        <source srcset="assets/img/events/meta-375.png" media="(max-width:767px)">
+                        <img src="assets/img/events/e3.png" alt="" class="">
+                    </picture>
+                </a>
+                <div class="flex flex-col md:py-5 md:px-7 p-5">
+                    <p class="font-semibold lg:text-xl md:text-sm text-xs mb-2 md:mb-0">Вебинар по особенностям 
+                        рынков Ближнего Востока</p>
+                    <p class="md:leading-6 leading-0 lg:text-base md:text-xs text-[10px]">Поговорим с экспертами рынков 
+                        в формате дискуссии
+                    </p>
+                    <p class="md:mt-9 mt-auto lg:text-sm md:text-sx text-[10px] font-light">22.11.2022</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Форма -->
+    <div class="bg-[url('assets/img/bg/bg5.svg')] bg-no-repeat bg-cover h-fit md:py-16 py-20">
+        <div class="container mx-auto flex lg:flex-row flex-col lg:justify-between lg:gap-32 gap-20 md:px-20 px-5 lg:px-0">
+            <div class="flex flex-col items-center lg:items-start lg:w-1/2 w-full lg:px-0 text-white gap-10">
+                <p class="lg:text-4xl md:text-[32px] text-2xl font-bold">Остались вопросы?</p>
+                <p class="lg:text-lg md:text-base text-xs">Оставьте заявку и наша команда свяжется с вами</p>
+                <div class="flex flex-col gap-5 mt-auto">
+                    <p class="lg:text-xl md:text-lg text-base font-sembold lg:text-start text-center">Или напишите нам:</p>
+                    <div class="flex gap-7">
+                        <a href="#" class="flex lg:flex-row flex-col gap-4 items-center">
+                            <img src="assets/img/icon/tg.png" alt="">
+                            <p class="md:text-xl text-base">Telegram</p>
+                        </a>
+                        <a href="" class="flex lg:flex-row flex-col gap-4 items-center">
+                            <img src="assets/img/icon/whatsapp.png" alt="">
+                            <p class="md:text-xl text-base">Whatsapp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:px-10 md:py-6 p-4 rounded-lg bg-white shadow-[0px_10px_30px_rgba(0,0,0,0.25)] lg:w-1/2 w-full">
+                <input type="text" class="py-6 px-0 border-b-[1px] border-0 border-[#E4E4E4] w-full text-[#707070]" placeholder="Имя">
+                <input type="text" class="py-6 px-0 border-b-[1px] border-0 border-[#E4E4E4] w-full text-[#707070]" placeholder="Почта">
+                <div class="relative">
+                    <img src="assets/img/icon/arrowDown.png" alt="" class="absolute top-8">
+                    <input autocomplete="off" list="phone" name="phone" class="focus:outline-0 focus:outline-offset-0 py-6 px-5 border-b-[1px] border-0 border-[#E4E4E4] w-full text-[#707070]" value="971"/>
+                    <datalist id="phone" class="">
+                        <option value="971"><img src="assets/img/icon/flag.png" alt=""></option>
+                        <option value="634"></option>
+                        <option value="568"></option>
+                        <option value="927"></option>
+                        <option value="902"></option>
+                    </datalist>
+                </div>
+                <button class="bg-[#07AF91] text-white rounded-lg md:w-fit w-full py-5 px-10 md:mt-9 mt-7 font-bold md:text-lg text-base">Оставить заявку</button>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Подвал -->
+    <div class="bg-[url('assets/img/bg/bg4.png')] bg-no-repeat h-fit lg:py-6 md:py-8 py-5 mt-5">
+        <div class="container px-5 min-[1216px]:px-0 mx-auto flex justify-between items-center text-white">
+            <div class="flex flex-col">
+                <a href="#" class="lg:text-2xl text-xl font-bold uppercase">
+                    innova<span class="text-[#00B1E9]">.VC</span>
+                </a>
+                <p class="lg:text-sm md:text-xs text-[10px] font-light">Все права защищены</p>
+            </div>
+            <div class="md:flex hidden gap-[52px] text-sm font-medium lg:text-lg">
+                <a href="#">Кто мы?</a>
+                <a href="#">Услуги</a>
+                <a href="#">Акселератор</a>
+                <a href="#">Новости</a>
+            </div>
+            <div class="flex flex-col lg:text-sm md:text-xs text-[10px] leading-4">
+                <p>Dubai, Single Business Tower<br> 
+                    1503, Business Bay
+                </p>
+                <a href="mailto:sales@innoma.vc" class="underline">Sales@innoma.vc</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
